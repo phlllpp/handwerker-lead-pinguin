@@ -590,6 +590,11 @@
     @media (max-width: 900px) {
       .modal-box { padding: 2rem 1.4rem 2.8rem; }
     }
+      .hero-logo-text {
+      font-family: var(--serif); font-size: 1.5rem; font-weight: 400;
+      color: var(--cream); letter-spacing: -.01em;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.55);
+    }
   </style>
 </head>
 <body>
@@ -628,7 +633,8 @@
 
       <!-- Logo groß auf dem Hero, unterhalb der Nav -->
       <a href="#" class="hero-logo" aria-label="Elektriker Berlin - Pinguin – Startseite">
-        <img src="images/logo_processed.png" alt="Elektriker Berlin - Pinguin" />
+        <img src="images/logo_processed.png" alt="Elektriker Berlin - Pinguin" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="hero-logo-text" style="display:none">Elektriker Berlin - Pinguin</span>
       </a>
 
       <div class="hero-content">
